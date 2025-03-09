@@ -1,0 +1,63 @@
+<div class="text-center mb-4">
+
+  <div id="visuals">
+    <div class="visual">
+      <!-- Ripple -->
+      <svg viewBox="0 0 320 320">
+        <defs>
+          <circle id="circle-clip" cx="50%" cy="50%" r="25%" />
+          <clipPath id="avatar-clip">
+            <use href="#circle-clip" />
+          </clipPath>
+        </defs>
+  
+        <circle cx="50%" cy="50%" r="25%" fill="#1a237e" fill-opacity="1">
+          <animate attributeName="r" values="25%;50%" dur="4s" repeatCount="indefinite" />
+          <animate attributeName="fill-opacity" values="1;0" dur="4s" repeatCount="indefinite" />
+        </circle>
+  
+        <circle cx="50%" cy="50%" r="25%" fill="#757ae9" fill-opacity="1">
+          <animate attributeName="r" values="25%;50%" dur="4s" begin="1s" repeatCount="indefinite" />
+          <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="1s" repeatCount="indefinite" />
+        </circle>
+  
+        <circle cx="50%" cy="50%" r="25%" fill="#1a237e" fill-opacity="1">
+          <animate attributeName="r" values="25%;50%" dur="4s" begin="2s" repeatCount="indefinite" />
+          <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="2s" repeatCount="indefinite" />
+        </circle>
+  
+        <circle cx="50%" cy="50%" r="25%" fill="#757ae9" fill-opacity="1">
+          <animate attributeName="r" values="25%;50%" dur="4s" begin="3s" repeatCount="indefinite" />
+          <animate attributeName="fill-opacity" values="1;0" dur="4s" begin="3s" repeatCount="indefinite" />
+        </circle>
+  
+        <image height="50%" width="50%" x="25%" y="25%" href="http://localhost:4200/assets/images/profil.jpeg" clip-path="url(#avatar-clip)" />  
+      </svg>
+    </div>
+    
+
+  <!-- <img  style="--c:#255b98;--cb:#f3bf99" src="/assets/images/profil.jpeg" class="rounded-circle profile-pic" alt="Profile Picture">
+   -->
+
+</div>
+
+<div class="nav flex-column nav-pills">
+  <a class="nav-link" [routerLink]="['/profile']" [class.active]="isActive('/profile')">
+    <i class="bi bi-person"></i> About me 
+  </a>
+  <a class="nav-link" [routerLink]="['/experience']" [class.active]="isActive('/experience')">
+    <i class="bi bi-briefcase"></i> Experience
+  </a>
+  <a class="nav-link" [routerLink]="['/education']" [class.active]="isActive('/education')">
+    <i class="bi bi-book"></i> Education
+  </a>
+  <a class="nav-link" [routerLink]="['/skills']" [class.active]="isActive('/skills')">
+    <i class="bi bi-code-square"></i> Technical Skills
+  </a>
+</div>
+
+<div class="social-links mt-4 text-center">
+  <a href="#" class="mx-2"><i class="bi bi-linkedin"></i></a>
+  <a href="#" class="mx-2"><i class="bi bi-github"></i></a>
+  <a href="#" class="mx-2"><i class="bi bi-envelope"></i></a>
+</div>
