@@ -1,0 +1,12 @@
+frontend:
+    path: .
+    publish: dist
+    scripts:
+        build:
+            - npm run build
+        deploy:
+            - npm install
+    subdomain: characteristic-mongoose
+name: characteristic-mongoose
+region: us-east-1
+yamlVersion: 2
